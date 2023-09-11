@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+p {
+    color: rgba(254, 254, 218, 0.842);
+}
+
+/* h4 {
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
+} */
+
+.titlecState {
+    margin: 2.6em 0 0.4em 0;
+    color: beige;
+    font-size: 42px;
+    font-family: russo one;
+}
+
+.cardState {
+    background-color: rgba(0, 0, 0, 0.646);
+    padding: 2.6em;
+}
+
+.textState{
+    margin-bottom: 1.2em;
+}
+.actionsandvalues {
+    text-decoration: none;
+    list-style: none;
+}
+
+.action-item-state {
+    display: flex;
+    margin-bottom: 0.3em;
+    background-color: rgba(240, 248, 255, 0.076);
+    color: rgb(230, 230, 230);
+    padding: 0.6em;
+    border-radius: 1em;
+    list-style-type: none;
+    gap: 1em
+}

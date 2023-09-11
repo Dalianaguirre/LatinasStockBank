@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../assets/images/newyork.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+}
+
+.cardMenu {
+    background-color: rgba(0, 0, 12, 0.726);
+    width: 95%;
+    height: 95%;
+    color: rgb(185, 73, 13);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+}
+
+.titlec {
+    margin-top: 3em;
+    text-align: center;
+    font-size: 50px;
+    font-family: russo one;
+    color: #fbf3e4;;
+    text-shadow: 0 2px 10px #3b3b3bf2;
+}
+
+.pininput{
+    margin-top: 1.2em;
+    font-size: 16px;
+    color: orange;
+    gap: 12px;
+}
+
+.pininput input {
+    margin-top: 0.6em;
+}
+
+.button-cpin {
+    background-color: orange;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 1em;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 3em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    transition: scale 0.2 ease;
+    box-shadow: 0 2px 3px #727171;
+    text-shadow: 0 2px 3px #0000007e;
+}
+
+.button-cpin:hover {
+    scale: 1.05;
+    color: #fff;
+    background-color: #b0780f;
+}
+
+.button-cpin:active {
+    scale: 0.95;
+}
+
+.success {
+    font-size: 1.1em;
+    color: #68dd6c;
+    margin: 2px;
+    text-shadow: 0 1px 2px #e6e6e6;
+}
+
+.errorc {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    color:#fb471e;
+    margin: 2px;
+    text-shadow: 0 1px 1px #e7e7e79b;
+}
+
+.button-logoutt {
+    position: relative;
+    color: #e29300e1;
+    font-size: 18px;
+    margin-top: 20em;
+}
+
+.button-logoutt p {
+    color: #fbf3e4;
+}
+
+.button-logoutt i:hover {
+    color:red;
+    cursor: pointer;
+}
+
+.button-logoutt i:active {   
+    scale: 0.95;
+}
+
+@media(min-width: 390px) {
+    .button-logoutt {
+        margin-top: 4em;
+    }
+}
+
+.success-home-review {
+    padding: 0.6em 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1.5px solid #075985;
+    background: rgba(2, 209, 209, 0.915);
+    border-radius: 0.8em;
+    color: #ecfeff;
+    text-shadow: -1px -1px 0 #155e75;
+    box-shadow: 1px 1px 3px rgba(205, 205, 205, 0.6);
+    cursor: pointer;
+    text-decoration: none;
+    transition: scale 0.2 ease;
+    margin-bottom: 5em;
+    margin-top: 9em;
+    border-radius: 1em;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.success-home-review:hover {
+    background: rgba(2, 195, 209, 0.497);
+    color: white;
+    text-decoration: none;
+}
+
+.success-home-review:active {
+    background: rgb(0, 197, 197);
+    color: #ecfeff;
+    border: 1.5px solid #ecfeff;
+    box-shadow: none;
+    text-decoration: none;
+}

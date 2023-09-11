@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardMenu h3 {
+    font-size: 18px;
+    margin: 2em 0 1em 0;
+    color: rgba(2, 209, 209, 0.869);
+}
+
+.action-select {
+    margin-top: 30px;
+    text-align: center;
+    color: orange; 
+}
+
+.quantity-select {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quantity-select .labell {
+    margin-bottom: 10px;
+    text-align: center;
+    color: orange; 
+}
+
+select {
+    margin-top: 6px;
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; 
+    color: #333; 
+}
+
+input[type="number"] {
+    margin-top: 3px;
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; 
+}
+
+button {
+    margin-top: 2em;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    background-color: #ff7f00; 
+    color: #fff; 
+    border: none;
+    border-radius: 0.8em;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #155f7563;
+    font-weight: bold;
+}
+
+.success-message,
+.error-message {
+    font-size: 16px;
+    margin-top: 20px;
+    color: orange; 
+}

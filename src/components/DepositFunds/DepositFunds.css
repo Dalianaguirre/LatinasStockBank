@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titleFunds {
+    padding-top: 3em;
+    margin-bottom: 1em;
+}
+
+.amount-input .labelll {
+    margin-bottom: 2px;
+    text-align: center;
+    color: orange; 
+} 
+
+.amount-input input {
+    margin-top: 0.6em;
+}
