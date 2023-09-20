@@ -4,20 +4,21 @@ import { Link } from 'react-router-dom';
 import { useUserContext } from '../../Context/MyContext';
 
 export function ReviewActions({ user }) {
+    const { userActions } = useUserContext();
 
-    const [localUserActions, setLocalUserActions] = useState([]);
+    // const [localUserActions, setLocalUserActions] = useState([]);
 
-    useEffect(() => {
+    // useEffect(() => {
         
-        const storedUserActions = JSON.parse(localStorage.getItem('userActions'));
-        if (storedUserActions) {
-            setLocalUserActions(storedUserActions);
-        }
-    }, []);
+    //     const storedUserActions = JSON.parse(localStorage.getItem('userActions'));
+    //     if (storedUserActions) {
+    //         setLocalUserActions(storedUserActions);
+    //     }
+    // }, []);
 
     const calculateTotalValue = () => {
         let totalValue = 0;
-        localUserActions.forEach((action) => {
+        userActions.forEach((action) => {
             totalValue += action.value * action.quantity;
         });
         return totalValue;
@@ -33,7 +34,7 @@ export function ReviewActions({ user }) {
 
                 <div className='resume'>
                     <ul>
-                        {localUserActions.map((action, index) => (
+                        {userActions.map((action, index) => (
                             <li key={index}>
                                 <div className='action-item'>
                                     <h4>{action.name}</h4>

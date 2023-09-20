@@ -10,18 +10,18 @@ export function Statement({ user }) {
   const storedUserName = localStorage.getItem('userName');
   const { userActions, userFunds } = useUserContext();
   
-  const [localUserActions, setLocalUserActions] = useState([]);
+  // const [localUserActions, setLocalUserActions] = useState([]);
 
-  useEffect(() => {
-      const storedUserActions = JSON.parse(localStorage.getItem('userActions'));
-      if (storedUserActions) {
-          setLocalUserActions(storedUserActions);
-      }
-  }, []);
+  // useEffect(() => {
+  //     const storedUserActions = JSON.parse(localStorage.getItem('userActions'));
+  //     if (storedUserActions) {
+  //         setLocalUserActions(storedUserActions);
+  //     }
+  // }, []);
 
   const calculateTotalValue = () => {
     let totalValue = 0;
-    localUserActions.forEach((action) => {
+    userActions.forEach((action) => {
         totalValue += action.value * action.quantity;
     });
     return totalValue;
@@ -51,7 +51,7 @@ export function Statement({ user }) {
                         <p><h4>Nombre de usuario:</h4> {storedUserName}</p>
                         <p><h4>Acciones y Valores:</h4> </p>
                           <ul className='actionsandvalues'>
-                              {localUserActions.map((action, index) => (
+                              {userActions.map((action, index) => (
                                   <li key={index}>
                                     <div className='action-item-state'>
                                           <h4> {action.name}</h4>
