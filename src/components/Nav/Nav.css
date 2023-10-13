@@ -11,12 +11,12 @@
    /*background-size: contain; Ajusto el tamaño del logotipo */
   background-repeat: no-repeat; 
   max-height: 90%; /* Altura del encabezado */
-  margin-left: 2em;
+  margin-left: 2.5em;
   border-radius: 50%;
 }
 
 .nav_items {
-  margin-right: 1.6em;
+  margin-right: 8em;
 }
 
 .nav_items a {
@@ -41,7 +41,7 @@
   display: none;
 }
 
-@media(max-width: 1100px) {
+@media(max-width: 1300px) {
   .nav_items {
     position: absolute;
     top: 100px;
